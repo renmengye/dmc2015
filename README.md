@@ -1,16 +1,20 @@
-==DMC2015
+DMC2015
+=============
 Output the probability of customer apply on the i^th product given
 they applied some product.
 
-==Train
+Train
+=============
 python train.py {id} -o . -m kwprd.yml -c train-prd-nov.yml -d train-prd.npy
 
-==Test
+Test
+=============
 python test-out.py {id-timestamp} -test test-valid.npy
 
 The output file can be found in {id-timestamp}/{id-timestamp}.test.o.txt
 
-==Architecture
+Architecture
+=============
 492 words -> 50 dimension vectors
 
 Sum all the keywords in a bag (still 50 dimension vectors).
@@ -24,6 +28,7 @@ Hyper-parameters of training can be viewed in kwprd.yml
 
 Trained for 300 epochs
 
-==Results
+Results
+=============
 79% accuracy
 77% recall
