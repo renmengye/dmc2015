@@ -4,14 +4,14 @@ Outputs the probability of customer apply on the i^th product given
 they applied some product.
 
 ## To Train
-'''sh
+```sh
 python train.py {id} -o . -m kwprd.yml -c train-prd-nov.yml -d train-prd.npy
-'''
+```
 
 ## To Test
-'''sh
+```sh
 python test-out.py {id-timestamp} -test test-valid.npy
-'''
+```
 
 The output file can be found in {id-timestamp}/{id-timestamp}.test.o.txt
 
